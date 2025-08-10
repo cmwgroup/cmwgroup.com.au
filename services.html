@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Services - CMW Group</title>
+  <title>Contact - CMW Group</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -24,20 +24,24 @@
     </div>
   </header>
 
-  <main>
-    <h2>Our Services</h2>
-    <ul style="list-style:none; padding:0;">
-      <li>Landscaping</li>
-      <li>Excavation</li>
-      <li>Concreting</li>
-      <li>Retaining Walls</li>
-      <li>Carpentry</li>
-      <li>Fencing</li>
-      <li>Outdoor Makeovers</li>
-    </ul>
-  </main>
+  <section>
+    <h2>Contact Us</h2>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p>Email: <a href="mailto:cmwgroupnsw@outlook.com">info@cmwgroup.com.au</a></p>
+    <p>Phone:
+      <a href="tel:0449560332">0449 560 332</a> &nbsp;•&nbsp;
+      <a href="tel:0412345678">0412 345 678</a>
+    </p>
+    <p>Instagram: <a href="https://instagram.com/cmwgroup.nsw" target="_blank">@cmwgroup.nsw</a></p>
+  </section>
 
   <footer>&copy; 2025 CMW Group</footer>
 </body>
 </html>
-
