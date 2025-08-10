@@ -56,4 +56,7 @@ form button {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-}
+}.social { margin-top: 8px; }
+.social a { display: inline-flex; align-items: center; gap: 8px; color: #fff; text-decoration: none; font-weight: 600; }
+.icon { width: 20px; height: 20px; fill: currentColor; }
+
