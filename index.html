@@ -1,30 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>CMW Group - Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CMW Group - Where Nature Meets Design</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <img src="assets/logo.jpeg" alt="CMW Group Logo">
-    <nav>
+  <header class="site-header">
+    <img src="assets/logo.jpeg" alt="CMW Group Logo" class="logo"/>
+    <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="gallery.html">Gallery</a>
       <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
   <main>
-    <h1>Where Nature Meets Design</h1>
-    <div class="grid">
-      <img src="assets/hero1.jpg" class="responsive" />
-      <img src="assets/hero2.jpg" class="responsive" />
-      <img src="assets/hero3.jpg" class="responsive" />
-      <img src="assets/hero4.jpg" class="responsive" />
-    </div>
+    <section class="hero-grid">
+      <img src="assets/hero1.jpg" alt="Featured project 1" class="hero-img"/>
+      <img src="assets/hero2.jpg" alt="Featured project 2" class="hero-img"/>
+      <img src="assets/hero3.jpg" alt="Featured project 3" class="hero-img"/>
+      <img src="assets/hero4.jpg" alt="Featured project 4" class="hero-img"/>
+    </section>
+    <section class="intro">
+      <h1>Where Nature Meets Design</h1>
+      <p>Quality landscaping, stonework, concreting, carpentry, and garden makeovers across NSW.</p>
+      <div class="cta">
+        <a class="btn" href="contact.html">Get a quote</a>
+        <a class="btn secondary" href="gallery.html">View gallery</a>
+      </div>
+    </section>
   </main>
-  <footer>&copy; 2025 CMW Group</footer>
+  <footer class="site-footer"><p>© 2025 CMW Group. All rights reserved.</p></footer>
 </body>
 </html>
