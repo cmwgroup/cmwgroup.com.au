@@ -4,24 +4,58 @@
   <meta charset="UTF-8" />
   <title>CMW Group - Home</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-  <header>
-    <img src="assets/logo.jpeg" alt="CMW Group Logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="social">
-      <a href="https://instagram.com/cmwgroup.nsw" target="_blank" aria-label="Instagram">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"/>
-        </svg>
-        @cmwgroup.nsw
-      </a>
+  <header class="site-header">
+    <!-- Top grey bar -->
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="top-item" href="https://instagram.com/cmwgroup.nsw" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"/></svg>
+          @cmwgroup.nsw
+        </a>
+        <a class="top-item" href="mailto:cmwgroupnsw@outlook.com">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2zm0 2l8 5 8-5"/></svg>
+          cmwgroupnsw@outlook.com
+        </a>
+        <a class="top-item" href="tel:0449560332">0449 560 332</a>
+        <span class="divider">•</span>
+        <a class="top-item" href="tel:0484053388">0484 053 388</a>
+      </div>
     </div>
+
+    <!-- Green brand bar -->
+    <div class="brandbar">
+      <div class="brandbar-inner">
+        <a href="index.html" class="logo-link">
+          <img src="assets/logo.jpeg" alt="CMW Group Logo" class="logo" />
+        </a>
+        <a href="contact.html" class="btn-cta">Contact Us</a>
+      </div>
+    </div>
+
+    <!-- Bottom grey nav with Services dropdown -->
+    <nav class="mainnav">
+      <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="services.html">Services</a>
+          <div class="dropdown">
+            <a href="services.html#landscaping">Landscaping</a>
+            <a href="services.html#excavation">Excavation</a>
+            <a href="services.html#concreting">Concreting</a>
+            <a href="services.html#retaining">Retaining Walls</a>
+            <a href="services.html#carpentry">Carpentry & Decking</a>
+            <a href="services.html#fencing">Fencing</a>
+            <a href="services.html#makeovers">Outdoor Makeovers</a>
+            <a href="services.html#maintenance">Maintenance</a>
+          </div>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -32,20 +66,6 @@
       <img src="assets/hero3.jpg" class="responsive" alt="Featured project 3" />
       <img src="assets/hero4.jpg" class="responsive" alt="Featured project 4" />
     </div>
-
-    <!-- Simple Instagram widget card -->
-    <section class="instagram-widget">
-      <div class="ig-card">
-        <div class="ig-header">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"/>
-          </svg>
-          <a href="https://instagram.com/cmwgroup.nsw" target="_blank" rel="noopener">@cmwgroup.nsw</a>
-        </div>
-        <p>See our latest work on Instagram.</p>
-        <a class="btn" href="https://instagram.com/cmwgroup.nsw" target="_blank" rel="noopener">Follow & View Gallery</a>
-      </div>
-    </section>
   </main>
 
   <footer>&copy; 2025 CMW Group</footer>
